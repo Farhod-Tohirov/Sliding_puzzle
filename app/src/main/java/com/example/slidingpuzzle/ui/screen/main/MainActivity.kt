@@ -73,6 +73,7 @@ class MainActivity : AppCompatActivity() {
         buttonBrowseGallery.setOnClickListener {
             val intent = Intent(this, CategoryActivity::class.java)
             startActivity(intent)
+
         }
         buttonChooseFromFolder.setOnClickListener {
             checkPermission(Manifest.permission.READ_EXTERNAL_STORAGE) {
